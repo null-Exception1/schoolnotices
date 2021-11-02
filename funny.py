@@ -7,7 +7,7 @@ TOKEN = "".join(i)
 client = discord.Client()
 def getall():
     htm = requests.get('https://dpsrkp.net/category/notices').text
-    w = BeautifulSoup(htm,features="lxml")
+    w = BeautifulSoup(htm)
     h = w.text
     j = []
     for i in range(1,len(h.split('Read More »'))-1):
