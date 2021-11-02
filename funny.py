@@ -1,8 +1,8 @@
 import requests
 import discord
 from bs4 import BeautifulSoup
-i = ['0', '7', 'C', 'd', 'D', '-', 'Z', 'G', 'V', 'M', 'D', '2', 'V', '4', 'z', 'H', 'm', 'z', '_', 'T', 'c', 'b', 'V', 'R', 'P', 'w', 'y', '.', 'Q', 'v', 'D', 'E', 'Y', 'Y', '.', '3', 'M', 'z', 'M', '5', 'U', 'T', 'M', 'z', 'A', 'z', 'M', 'y', 'k', 'D', 'N', '0', 'I', 'D', 'M', '1', 'A', 'T', 'O'].reverse()
-
+i = ['0', '7', 'C', 'd', 'D', '-', 'Z', 'G', 'V', 'M', 'D', '2', 'V', '4', 'z', 'H', 'm', 'z', '_', 'T', 'c', 'b', 'V', 'R', 'P', 'w', 'y', '.', 'Q', 'v', 'D', 'E', 'Y', 'Y', '.', '3', 'M', 'z', 'M', '5', 'U', 'T', 'M', 'z', 'A', 'z', 'M', 'y', 'k', 'D', 'N', '0', 'I', 'D', 'M', '1', 'A', 'T', 'O']
+i.reverse()
 TOKEN = "".join(i)
 client = discord.Client()
 def getall():
