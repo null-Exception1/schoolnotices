@@ -34,12 +34,12 @@ async def on_message(message):
             embed.add_field(name=str(m.index(i)+1), value=i, inline=False)
         await message.channel.send(embed=embed)
     if "!notices" in message.content:
-        if int(message.content.split(' ')[1]) <= 11:
+        if int(message.content.split(' ')[1]) <= 12 and int(message.content.split(' ')[1]) != 0:
             m = getall()
-            embed=discord.Embed(title="Notice "+message.content.split(' ')[1], description=m[int(message.content.split(' ')[1])], color=discord.Color.green())
+            embed=discord.Embed(title="Notice "+(message.content.split(' ')[1]-1), description=m[int(message.content.split(' ')[1])-1], color=discord.Color.green())
             await message.channel.send(embed=embed)
         else:
-            embed=discord.Embed(title="Notice index can be not more than 11!!", description="weird bug but ok", color=discord.Color.green())
+            embed=discord.Embed(title="Notice index can be not more than 12 or 0", description="weird bug but ok", color=discord.Color.green())
             await message.channel.send(embed=embed)
 last_m = getall()
 client.run(TOKEN)
