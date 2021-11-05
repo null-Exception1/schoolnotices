@@ -11,7 +11,7 @@ def getall():
     w = BeautifulSoup(htm)
     h = w.text
     j = []
-    for i in range(len(h.split('Read More »'))-1):
+    for i in range(1,len(h.split('Read More »'))-1):
         k = h.split('Read More »')[i]
         k = k.replace('\n','')
         k = k.replace('\r','')
