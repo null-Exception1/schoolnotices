@@ -11,7 +11,7 @@ def getall():
     w = BeautifulSoup(htm)
     h = w.text
     j = []
-    for i in range(1,len(h.split('Read More »'))-1):
+    for i in range(len(h.split('Read More »'))-1):
         k = h.split('Read More »')[i]
         k = k.replace('\n','')
         k = k.replace('\r','')
@@ -43,13 +43,6 @@ async def on_message(message):
             await message.channel.send(embed=embed)
 last_m = getall()
 client.run(TOKEN)
-while True:
-    time.sleep(5)
-    m = getall()
-    if last_m[0] != m[0]:
-        channel = client.get_channel('852814482455658508')
-        embed=discord.Embed(title="Notice", description=m[0], color=discord.Color.green())
-        channel.send(embed=embed)
 
 """
 import requests
