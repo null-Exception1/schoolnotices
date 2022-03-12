@@ -1,1 +1,1 @@
-worker: python funny.py
+worker: npm index.js
