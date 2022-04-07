@@ -20,9 +20,11 @@ def helloworld(resp):
 async def lp():
     while True:
         bot.sendMessage("895174767915720745", "pls fish")
+        await asyncio.sleep(1)
         bot.sendMessage("895174767915720745", "pls dig")
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
         bot.sendMessage("895174767915720745", "pls beg")
+        await asyncio.sleep(1)
         bot.sendMessage("895174767915720745", "pls hunt")
         await asyncio.sleep(35)
 a = asyncio.get_event_loop()
