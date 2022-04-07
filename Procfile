@@ -1,1 +1,1 @@
-worker: npm index.js
+worker: python eh.py
