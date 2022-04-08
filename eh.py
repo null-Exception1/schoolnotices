@@ -2,7 +2,7 @@ import discum
 from discord.ext import tasks
 import asyncio
 bot = discum.Client(token='NzY5NTI5MzM3ODU3ODM1MDE5.Yk69jQ.xQHxbYPcwBMeCIDwg4okMhbFdn0', log=False)
-bot2 = discum.Client(token='NzMxMTY3MzczMTQ2NTg3MTk3.YlAP7w.FrrcAxioylY_RhcHOefGFHamCaE', log=False)
+
 @bot.gateway.command
 def helloworld(resp):
     if resp.event.ready_supplemental: #ready_supplemental is sent after ready
@@ -23,15 +23,18 @@ async def lp():
         bot.sendMessage("895174767915720745", "pls dig")
         bot.sendMessage("895174767915720745", "pls beg")
         bot.sendMessage("895174767915720745", "pls hunt")
-
-        bot2.sendMessage("895174767915720745", "pls fish")
-        bot2.sendMessage("895174767915720745", "pls dig")
-        bot2.sendMessage("895174767915720745", "pls beg")
-        bot2.sendMessage("895174767915720745", "pls hunt")
-        
         await asyncio.sleep(35)
+
+async def sell():
+    while True:
+        a = ['fish','exotic','sand','weed','bank','skunk','rarefish','worm','garbage','alcohol','candy','jelly','boar','deer','rabbit']
+        for i in a:
+            bot.sendMessage("895174767915720745", "pls sell "+i+" all")
+            await asyncio.sleep(5)
+        await asyncio.sleep(120)
 a = asyncio.get_event_loop()
 a.create_task(lp())
+a.create_task(sell())
 a.run_forever()
 
 print('hi')
