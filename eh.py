@@ -45,7 +45,6 @@ async def lp():
         bot.sendMessage("895174767915720745", "pls dig")
         bot.sendMessage("895174767915720745", "pls beg")
         bot.sendMessage("895174767915720745", "pls hunt")
-        bot.sendMessage("895174767915720745", "p!h")
         await asyncio.sleep(35)
 
 async def sell():
@@ -58,7 +57,6 @@ async def sell():
 a = asyncio.get_event_loop()
 a.create_task(lp())
 a.create_task(sell())
-a.create_task(bot.gateway.run(auto_reconnect=True))
 a.run_forever()
 
 print('hi')
