@@ -48,7 +48,7 @@ async def lp():
         bot.sendMessage("895174767915720745", "pls beg")
         await asyncio.sleep(1)
         bot.sendMessage("895174767915720745", "pls hunt")
-        await asyncio.sleep(35)
+        await asyncio.sleep(33)
 
 async def sell():
     while True:
