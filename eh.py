@@ -49,11 +49,11 @@ async def lp():
 
 async def sell():
     while True:
-        a = ['fish','exotic','sand','weed','bank','skunk','rarefish','worm','garbage','alcohol','candy','jelly','boar','deer','rabbit']
+        a = ['fish','exotic','sand','weed','bank','skunk','rarefish','worm','garbage','alcohol','candy','jelly','boar','deer','rabbit','ladybug','ant']
+        await asyncio.sleep(5)
         for i in a:
             bot.sendMessage("895174767915720745", "pls sell "+i+" all")
             await asyncio.sleep(5)
-        await asyncio.sleep(120)
 a = asyncio.get_event_loop()
 a.create_task(lp())
 a.create_task(sell())
