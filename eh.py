@@ -11,7 +11,10 @@ while True:
         bot.sendMessage(channel, random.choice(["washed my eyes","eyes washed just now","just washed my eyes"]))
     else:
         a = False
-    if "00:28:00" in time.ctime() or "00:28:01" in time.ctime() or "00:28:02" in time.ctime():
+    if "00:28:00" in time.ctime() or "00:28:01" in time.ctime() or "00:28:02" in time.ctime() and a == False:
+        a = True
         bot.sendMessage(channel, random.choice(["washed my eyes","eyes washed just now","just washed my eyes"]))
+    else:
+        a = False
     
     time.sleep(1)
