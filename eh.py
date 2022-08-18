@@ -2,7 +2,7 @@ import discum
 import time
 import random
 bot = discum.Client(token='NzY5NTI5MzM3ODU3ODM1MDE5.GSbwgs.edrcq8ruNFQ6jldMEuj6ISBcfz5lD1mhj_a8RU', log=False)
-channel = "779279804297248769"
+channel = "1001820243682934855"
 a = False
 while True:
     if "12:59:00" in time.ctime() or "12:59:01" in time.ctime() or "12:59:02" in time.ctime() and a == False:
