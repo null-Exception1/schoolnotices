@@ -6,7 +6,7 @@ channel = "1001820243682934855"
 while True:
     if "18:05:00" in time.ctime():
         bot.sendMessage(channel, random.choice("washed my eyes","eyes washed just now","just washed my eyes"))
-    if "15:30:00" in time.ctime():
+    if "05:58:00" in time.ctime():
         bot.sendMessage(channel, random.choice("washed my eyes","eyes washed just now","just washed my eyes"))
     
     time.sleep(1)
