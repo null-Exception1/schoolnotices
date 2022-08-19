@@ -1,3 +1,2 @@
-discum
-discord
+google_auth_oauthlib
 requests
